@@ -20,15 +20,31 @@ const Header = () => {
     const [categories, setCategories] = useState(null);
 
     // const { cartItems } = useSelector((state) => state.cart);
+    const controlNavbar = () => {
+        if (window.scrollY > 200) {
+            if (window.scrollY > lastScrollY && !mobileMenu) {
+                setShow("-translate-y-[80px]");
+            } else {
+                setShow("shadow-sm");
+            }
+        } else {
+            setShow("translate-y-0");
+        }
+        setLastScrollY(window.scrollY);
+    };
+
     // const controlNavbar = () => {
     //     if (window.scrollY > 200) {
-    //        setShow("-translate-y-[80px]")
+    //         if (window.scrollY > lastScrollY && !mobileMenu) {
+    //             setShow("-translate-y-[80px]");
+    //         } else {
+    //             setShow("shadow-sm");
+    //         }
     //     } else {
     //         setShow("translate-y-0");
     //     }
+    //     setLastScrollY(window.scrollY);
     // };
-
-    
 
     useEffect(() => {
         window.addEventListener("scroll", controlNavbar);
