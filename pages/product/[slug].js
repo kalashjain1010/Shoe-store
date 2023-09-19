@@ -1,4 +1,5 @@
 import ProductDetailsCarousel from "@/components/ProductDetailsCarousel";
+import RelatedProducts from "@/components/RelatedProducts";
 import Wrapper from "@/components/Wrapper";
 import React from "react";
 import { IoMdHeartEmpty } from "react-icons/io";
@@ -11,7 +12,7 @@ const productDetail = () => {
           {/* left */}
           <div className="w-full md:w-auto flex-[1.5] max-w-[500px] lg:max-w-full mx-auto lg:mx-0 ">
             <ProductDetailsCarousel />
-            x``
+           
           </div>
 
           {/* right */}
@@ -70,7 +71,7 @@ const productDetail = () => {
                 Size selection is required
               </div>
             </div>
-{/* dsasadf */}
+
             {/* add to cart */}
             <button className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75">
               Add to cart
@@ -92,6 +93,11 @@ const productDetail = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* related prodect */}
+        <div>
+          <RelatedProducts />
         </div>
       </Wrapper>
     </div>
