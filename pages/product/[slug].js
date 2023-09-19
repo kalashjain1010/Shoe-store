@@ -70,7 +70,7 @@ const productDetail = () => {
                 Size selection is required
               </div>
             </div>
-{/* dsa */}
+{/* dsasadf */}
             {/* add to cart */}
             <button className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75">
               Add to cart
