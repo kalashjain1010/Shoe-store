@@ -8,14 +8,14 @@ const RelatedProducts = ({ products }) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 4,
+            items: 3,
         },
         tablet: {
             breakpoint: { max: 1023, min: 464 },
-            items: 3,
+            items: 2,
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 767, min: 0 },
             items: 1,
         },
     };
@@ -28,10 +28,9 @@ const RelatedProducts = ({ products }) => {
                 containerClass="-mx-[10px]"
                 itemClass="px-[10px]"
             >
-                <ProductCard/><ProductCard/>
-                <ProductCard/><ProductCard/>
-                <ProductCard/><ProductCard/>
-                <ProductCard/><ProductCard/>
+                {products?.data?.map((product) => (
+                    <ProductCard key={product?.id} data={product} />
+                ))}
             </Carousel>
         </div>
     );
