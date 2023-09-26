@@ -131,7 +131,7 @@ const productDetail = ({ product,products }) => {
               Add to cart
             </button>
             <button className="w-full py-4 rounded-full border border-black text-lg font-medium transition-transform active:scale-95 flex items-center justify-center gap-2 hover:opacity-75 mb-10">
-              Whishlist
+              Wishlist
               <IoMdHeartEmpty size={20} />
             </button>
             <div>
