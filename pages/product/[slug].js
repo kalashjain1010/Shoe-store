@@ -97,7 +97,7 @@ const productDetail = () => {
 
         {/* related prodect */}
         <div>
-          <RelatedProducts />
+          {/* <RelatedProducts /> */}
         </div>
       </Wrapper>
     </div>
@@ -105,3 +105,6 @@ const productDetail = () => {
 };
 
 export default productDetail;
+
+
+

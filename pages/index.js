@@ -6,7 +6,7 @@ export default function Home({ products }) {
     return (
         <main>
             <HeroBanner />
-            <h1>{products.data?.[1].attributes?.name}</h1>
+            {/* <h1>{products.data?.[1].attributes?.name}</h1> */}
             <Wrapper>
                 {/* heading and paragaph start */}
                 <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[80px]">
